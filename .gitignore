@@ -1,0 +1,6 @@
+.dist/
+
+# intermediate files
+ominous-beeping-app/node_modules/
+ominous-beeping-app/plugins/
+# ominous-beeping-app/build/

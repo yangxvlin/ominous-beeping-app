@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		36C47D46D3294B089A814CE3 /* HCPLDPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A044D1E44AB04896B2961E1F /* HCPLDPlugin.m */; };
+		59A76D2F8B7C463BA752880E /* HCPLDOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B98740EF8C43F288EB0326 /* HCPLDOptions.m */; };
+		7049863F6D324E9D81EE3076 /* HCPLDXmlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ECAEB171464DB2AEC4DD41 /* HCPLDXmlConfig.m */; };
+		BDDE3E1F4D2844B59FB349D9 /* HCPLDXmlConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9619C6EDBFF546768300B55A /* HCPLDXmlConfigParser.m */; };
+		9F435135F8F0494E93A5447B /* HCPLDXmlTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D86DA3E904B45B6DA9F18 /* HCPLDXmlTags.m */; };
+		89C3CC4C27D14C46990C44CF /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E10F5668DE4194816843BC /* SocketAckEmitter.swift */; };
+		F305A434E7214F779EA638B5 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A740DFD778C547B496D76809 /* SocketAckManager.swift */; };
+		8671CB33D50C405DB676C376 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCB7F4675B4FB7B1107037 /* SocketAnyEvent.swift */; };
+		BB08FDFCCC994C5ABDA1A0FD /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD321A8BDE24DF290CA6610 /* SocketClientManager.swift */; };
+		51296F4F2CB841E183679CFA /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2EEA11647F41C6861C51FD /* SocketEngine.swift */; };
+		8406F1B590BB438EBC3369FF /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A5368DEC14B9883B59CB7 /* SocketEngineClient.swift */; };
+		B1428913DEC347248A49BE11 /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CF2D5269F425AB67630CE /* SocketEnginePacketType.swift */; };
+		5669942A52464B3FA4E92A41 /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78733C07F45440EAB74B0A17 /* SocketEnginePollable.swift */; };
+		E5010460EF114F6B81BB415C /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C9F28C8F24B91A45DAF88 /* SocketEngineSpec.swift */; };
+		0858878798224EF3A47C8B23 /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DBB5DF5984F6C96C6F34F /* SocketEngineWebsocket.swift */; };
+		32EF681783DE469D95B08527 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C1591BCED3442FB8358C53 /* SocketEventHandler.swift */; };
+		BD857B5822E84C0CAB050ABD /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AFFB79C33A4FEA85FEB35B /* SocketExtensions.swift */; };
+		0C73CCD522FA407C88ADA7DA /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C155FD100C214B6485CE1B04 /* SocketIOClient.swift */; };
+		E41E375CF1B04E248E3CE8B6 /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341CD2F3EB474FE49317A4CA /* SocketIOClientConfiguration.swift */; };
+		56E10763FBDB4C71804011B3 /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DEDE9A6FC240649233D5FE /* SocketIOClientOption.swift */; };
+		0F374FCEAF82446B83DBD455 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E16AA61D6B4DDCBEBA59F0 /* SocketIOClientSpec.swift */; };
+		EAF256AFE9594249A436F998 /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C4831C190404A87050C8C /* SocketIOClientStatus.swift */; };
+		7FC9E4F6879546E2A7FB582A /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C8DAB76B344A59093F80B /* SocketLogger.swift */; };
+		E6BB64B7B9044B18A1414AA4 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE819E336A4B2EBE326B37 /* SocketPacket.swift */; };
+		C8AAA6BDCD9743A09CFEFF7E /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE178E2E5DB4198A9EE9A8D /* SocketParsable.swift */; };
+		66072AC57F5F4328A093B6E8 /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F4C73D6060462C8CE9A7F2 /* SocketStringReader.swift */; };
+		37D03AB687184D858BA37C08 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794FDB559934646B2A1882E /* SocketTypes.swift */; };
+		98BC58732C914FC9B1B90CD3 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E1C9EA0C0A4311BB9A7792 /* SSLSecurity.swift */; };
+		05A2EC30D1D8431CA1BA62A5 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52981B30794193B0D14EFE /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Beeping/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Beeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beeping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Beeping-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beeping-Prefix.pch"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Beeping/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Beeping-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Beeping-Info.plist"; path = "Beeping/Beeping-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Beeping/config.xml"; sourceTree = "<group>"; };
+		A044D1E44AB04896B2961E1F /* HCPLDPlugin.m */ = {isa = PBXFileReference; name = "HCPLDPlugin.m"; path = "cordova-hot-code-push-local-dev-addon/HCPLDPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		73B98740EF8C43F288EB0326 /* HCPLDOptions.m */ = {isa = PBXFileReference; name = "HCPLDOptions.m"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A9ECAEB171464DB2AEC4DD41 /* HCPLDXmlConfig.m */ = {isa = PBXFileReference; name = "HCPLDXmlConfig.m"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDXmlConfig.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9619C6EDBFF546768300B55A /* HCPLDXmlConfigParser.m */ = {isa = PBXFileReference; name = "HCPLDXmlConfigParser.m"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDXmlConfigParser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		495D86DA3E904B45B6DA9F18 /* HCPLDXmlTags.m */ = {isa = PBXFileReference; name = "HCPLDXmlTags.m"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDXmlTags.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F3E10F5668DE4194816843BC /* SocketAckEmitter.swift */ = {isa = PBXFileReference; name = "SocketAckEmitter.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketAckEmitter.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		A740DFD778C547B496D76809 /* SocketAckManager.swift */ = {isa = PBXFileReference; name = "SocketAckManager.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketAckManager.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		84BCB7F4675B4FB7B1107037 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; name = "SocketAnyEvent.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketAnyEvent.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		6AD321A8BDE24DF290CA6610 /* SocketClientManager.swift */ = {isa = PBXFileReference; name = "SocketClientManager.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketClientManager.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		8E2EEA11647F41C6861C51FD /* SocketEngine.swift */ = {isa = PBXFileReference; name = "SocketEngine.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEngine.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		066A5368DEC14B9883B59CB7 /* SocketEngineClient.swift */ = {isa = PBXFileReference; name = "SocketEngineClient.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEngineClient.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		539CF2D5269F425AB67630CE /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; name = "SocketEnginePacketType.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEnginePacketType.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		78733C07F45440EAB74B0A17 /* SocketEnginePollable.swift */ = {isa = PBXFileReference; name = "SocketEnginePollable.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEnginePollable.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		C09C9F28C8F24B91A45DAF88 /* SocketEngineSpec.swift */ = {isa = PBXFileReference; name = "SocketEngineSpec.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEngineSpec.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		018DBB5DF5984F6C96C6F34F /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; name = "SocketEngineWebsocket.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEngineWebsocket.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		61C1591BCED3442FB8358C53 /* SocketEventHandler.swift */ = {isa = PBXFileReference; name = "SocketEventHandler.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketEventHandler.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		C5AFFB79C33A4FEA85FEB35B /* SocketExtensions.swift */ = {isa = PBXFileReference; name = "SocketExtensions.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketExtensions.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		C155FD100C214B6485CE1B04 /* SocketIOClient.swift */ = {isa = PBXFileReference; name = "SocketIOClient.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketIOClient.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		341CD2F3EB474FE49317A4CA /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; name = "SocketIOClientConfiguration.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketIOClientConfiguration.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		A8DEDE9A6FC240649233D5FE /* SocketIOClientOption.swift */ = {isa = PBXFileReference; name = "SocketIOClientOption.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketIOClientOption.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		50E16AA61D6B4DDCBEBA59F0 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; name = "SocketIOClientSpec.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketIOClientSpec.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		FA5C4831C190404A87050C8C /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; name = "SocketIOClientStatus.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketIOClientStatus.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		4C7C8DAB76B344A59093F80B /* SocketLogger.swift */ = {isa = PBXFileReference; name = "SocketLogger.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketLogger.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		B7DE819E336A4B2EBE326B37 /* SocketPacket.swift */ = {isa = PBXFileReference; name = "SocketPacket.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketPacket.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		3EE178E2E5DB4198A9EE9A8D /* SocketParsable.swift */ = {isa = PBXFileReference; name = "SocketParsable.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketParsable.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		E3F4C73D6060462C8CE9A7F2 /* SocketStringReader.swift */ = {isa = PBXFileReference; name = "SocketStringReader.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketStringReader.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		2794FDB559934646B2A1882E /* SocketTypes.swift */ = {isa = PBXFileReference; name = "SocketTypes.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SocketTypes.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		61E1C9EA0C0A4311BB9A7792 /* SSLSecurity.swift */ = {isa = PBXFileReference; name = "SSLSecurity.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/SSLSecurity.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		1B52981B30794193B0D14EFE /* WebSocket.swift */ = {isa = PBXFileReference; name = "WebSocket.swift"; path = "cordova-hot-code-push-local-dev-addon/SocketIOClientSwift/WebSocket.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		DCFABD517CAD4553ABD98921 /* HCPLDPlugin.h */ = {isa = PBXFileReference; name = "HCPLDPlugin.h"; path = "cordova-hot-code-push-local-dev-addon/HCPLDPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B568D76B804F4C888CE04E9A /* HCPLDOptions.h */ = {isa = PBXFileReference; name = "HCPLDOptions.h"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F78CE33127AA4C42B5D1930B /* HCPLDXmlConfig.h */ = {isa = PBXFileReference; name = "HCPLDXmlConfig.h"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDXmlConfig.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F0C08EC8BE4742ABAC0D4FC5 /* HCPLDXmlConfigParser.h */ = {isa = PBXFileReference; name = "HCPLDXmlConfigParser.h"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDXmlConfigParser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1311D19B15F241D7866675EE /* HCPLDXmlTags.h */ = {isa = PBXFileReference; name = "HCPLDXmlTags.h"; path = "cordova-hot-code-push-local-dev-addon/Config/HCPLDXmlTags.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "Beeping/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Beeping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Beeping-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "Beeping";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Beeping-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = "Beeping/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A044D1E44AB04896B2961E1F /* HCPLDPlugin.m */,
+				73B98740EF8C43F288EB0326 /* HCPLDOptions.m */,
+				A9ECAEB171464DB2AEC4DD41 /* HCPLDXmlConfig.m */,
+				9619C6EDBFF546768300B55A /* HCPLDXmlConfigParser.m */,
+				495D86DA3E904B45B6DA9F18 /* HCPLDXmlTags.m */,
+				F3E10F5668DE4194816843BC /* SocketAckEmitter.swift */,
+				A740DFD778C547B496D76809 /* SocketAckManager.swift */,
+				84BCB7F4675B4FB7B1107037 /* SocketAnyEvent.swift */,
+				6AD321A8BDE24DF290CA6610 /* SocketClientManager.swift */,
+				8E2EEA11647F41C6861C51FD /* SocketEngine.swift */,
+				066A5368DEC14B9883B59CB7 /* SocketEngineClient.swift */,
+				539CF2D5269F425AB67630CE /* SocketEnginePacketType.swift */,
+				78733C07F45440EAB74B0A17 /* SocketEnginePollable.swift */,
+				C09C9F28C8F24B91A45DAF88 /* SocketEngineSpec.swift */,
+				018DBB5DF5984F6C96C6F34F /* SocketEngineWebsocket.swift */,
+				61C1591BCED3442FB8358C53 /* SocketEventHandler.swift */,
+				C5AFFB79C33A4FEA85FEB35B /* SocketExtensions.swift */,
+				C155FD100C214B6485CE1B04 /* SocketIOClient.swift */,
+				341CD2F3EB474FE49317A4CA /* SocketIOClientConfiguration.swift */,
+				A8DEDE9A6FC240649233D5FE /* SocketIOClientOption.swift */,
+				50E16AA61D6B4DDCBEBA59F0 /* SocketIOClientSpec.swift */,
+				FA5C4831C190404A87050C8C /* SocketIOClientStatus.swift */,
+				4C7C8DAB76B344A59093F80B /* SocketLogger.swift */,
+				B7DE819E336A4B2EBE326B37 /* SocketPacket.swift */,
+				3EE178E2E5DB4198A9EE9A8D /* SocketParsable.swift */,
+				E3F4C73D6060462C8CE9A7F2 /* SocketStringReader.swift */,
+				2794FDB559934646B2A1882E /* SocketTypes.swift */,
+				61E1C9EA0C0A4311BB9A7792 /* SSLSecurity.swift */,
+				1B52981B30794193B0D14EFE /* WebSocket.swift */,
+				DCFABD517CAD4553ABD98921 /* HCPLDPlugin.h */,
+				B568D76B804F4C888CE04E9A /* HCPLDOptions.h */,
+				F78CE33127AA4C42B5D1930B /* HCPLDXmlConfig.h */,
+				F0C08EC8BE4742ABAC0D4FC5 /* HCPLDXmlConfigParser.h */,
+				1311D19B15F241D7866675EE /* HCPLDXmlTags.h */,
+			);
+			name = Plugins;
+			path = "Beeping/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Beeping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Beeping" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "Beeping";
+			productName = "Beeping";
+			productReference = 1D6058910D05DD3D006BFB54 /* Beeping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Beeping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Beeping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/Beeping/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				36C47D46D3294B089A814CE3 /* HCPLDPlugin.m in Sources */,
+				59A76D2F8B7C463BA752880E /* HCPLDOptions.m in Sources */,
+				7049863F6D324E9D81EE3076 /* HCPLDXmlConfig.m in Sources */,
+				BDDE3E1F4D2844B59FB349D9 /* HCPLDXmlConfigParser.m in Sources */,
+				9F435135F8F0494E93A5447B /* HCPLDXmlTags.m in Sources */,
+				89C3CC4C27D14C46990C44CF /* SocketAckEmitter.swift in Sources */,
+				F305A434E7214F779EA638B5 /* SocketAckManager.swift in Sources */,
+				8671CB33D50C405DB676C376 /* SocketAnyEvent.swift in Sources */,
+				BB08FDFCCC994C5ABDA1A0FD /* SocketClientManager.swift in Sources */,
+				51296F4F2CB841E183679CFA /* SocketEngine.swift in Sources */,
+				8406F1B590BB438EBC3369FF /* SocketEngineClient.swift in Sources */,
+				B1428913DEC347248A49BE11 /* SocketEnginePacketType.swift in Sources */,
+				5669942A52464B3FA4E92A41 /* SocketEnginePollable.swift in Sources */,
+				E5010460EF114F6B81BB415C /* SocketEngineSpec.swift in Sources */,
+				0858878798224EF3A47C8B23 /* SocketEngineWebsocket.swift in Sources */,
+				32EF681783DE469D95B08527 /* SocketEventHandler.swift in Sources */,
+				BD857B5822E84C0CAB050ABD /* SocketExtensions.swift in Sources */,
+				0C73CCD522FA407C88ADA7DA /* SocketIOClient.swift in Sources */,
+				E41E375CF1B04E248E3CE8B6 /* SocketIOClientConfiguration.swift in Sources */,
+				56E10763FBDB4C71804011B3 /* SocketIOClientOption.swift in Sources */,
+				0F374FCEAF82446B83DBD455 /* SocketIOClientSpec.swift in Sources */,
+				EAF256AFE9594249A436F998 /* SocketIOClientStatus.swift in Sources */,
+				7FC9E4F6879546E2A7FB582A /* SocketLogger.swift in Sources */,
+				E6BB64B7B9044B18A1414AA4 /* SocketPacket.swift in Sources */,
+				C8AAA6BDCD9743A09CFEFF7E /* SocketParsable.swift in Sources */,
+				66072AC57F5F4328A093B6E8 /* SocketStringReader.swift in Sources */,
+				37D03AB687184D858BA37C08 /* SocketTypes.swift in Sources */,
+				98BC58732C914FC9B1B90CD3 /* SSLSecurity.swift in Sources */,
+				05A2EC30D1D8431CA1BA62A5 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beeping/Beeping-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Beeping/Beeping-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuliny.beeping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beeping/Beeping-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Beeping/Beeping-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuliny.beeping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuliny.beeping;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuliny.beeping;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Beeping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Beeping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

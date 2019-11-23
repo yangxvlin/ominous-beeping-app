@@ -8,9 +8,10 @@
 - ![](./docs/screenshoots.gif)
 
 ## How to run
-1. ```cd ./ominous-beeping-app```
-2. ```npm install```
-3. ```npm install -g cordova```
+1. ```git clone https://github.com/yangxvlin/ominous-beeping-app.git```
+2. ```cd ./ominous-beeping-app```
+3. ```npm install```
+4. ```npm install -g cordova```
 
 ### Android
 - ```cordova run android```
